@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDV Barber Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Barlow', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: white; /* Aggiungi questa linea */
+    }
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+      width: 100%;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-image: url('https://cdn.shopify.com/s/files/1/0593/8046/5822/files/Screenshot_2023-10-30_alle_15.41.46_480x480.png?v=1698677008'); 
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      color: white; /* Aggiungi questa linea */
+    }
+    main {
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    main section {
+      margin-bottom: 40px;
+      width: 80%;
+    }
+    main section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .image-center {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image-center img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    #prenota a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    #prenota a:hover {
+      background-color: #555;
+    }
+    #calendar {
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+      main section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LDV Barber Shop</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#chi-siamo">Chi Siamo</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+      <li><a href="#prenota">Prenota</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="hero">
+      <h1>Benvenuti in LDV Barber Shop!</h1>
+    </section>
+    <section id="prenota">
+      <h2>Prenota un appuntamento</h2>
+      <a href="http://calendly.com/lorenzodivincenzo09/30min">Clicca qui</a>
+    </section>
+    <section id="home">
+      <h2>LDV Barber Shop</h2>
+      <div class="image-center">
+        <img src="https://giordans.com/wp-content/uploads/Prodotti-Barbieri-Professionale.jpg" alt="">
+      </div>
+      <p>Offriamo servizi di taglio di capelli e barba per uomini di tutte le età.</p>
+    </section>
+    <section id="servizi">
+      <h2>Servizi</h2>
+      <p>Offriamo una vasta gamma di servizi, tra cui:</p>
+      <ul>
+        <li>Taglio di capelli</li>
+        <li>Rasatura della barba</li>
+        <li>Trattamenti per la cura dei capelli</li>
+        <li>Modellatura della barba</li>
+        <li>Tintura e decolorazione capelli</li>
+      </ul>
+    </section>
+    <section id="chi-siamo">
+      <h2>Chi Siamo</h2>
+      <p>Siamo una barberia con anni di esperienza nel settore. Il nostro team di esperti barbieri è pronto a soddisfare le vostre esigenze di grooming.</p>
+    </section>
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>Per prenotazioni o informazioni, contattateci ai seguenti recapiti:</p>
+      <ul>
+        <li>Telefono: +39 324 6614489 - Lorenzo</li>
+        <li>Telefono: +39 328 8918750 - Maurizio</li>
+        <li><a href="mailto:ldvbarbershop@gmail.com">Email: ldvbarbershop@gmail.com</a></li>
+        <li>Indirizzo: Piazza Madonna della Catena, 20</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2021 LDV Barber Shop. Tutti i diritti riservati.</p>
+  </footer>
+ 
+</body>
+</html>
